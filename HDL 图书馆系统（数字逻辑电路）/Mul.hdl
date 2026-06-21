@@ -1,0 +1,70 @@
+CHIP Mul{
+    IN 
+       BookNum[16],BookPri[16];
+    OUT
+       TotalVal[16];
+    PARTS:
+        //一整个*一位=一整个
+	Mux16(a=false, b=BookNum, sel=BookPri[0], out=result1);
+
+	And16(a[0]=false, a[1..15]=BookNum[0..14], b=true, out=shift1);
+	Mux16(a=false, b=shift1, sel=BookPri[1], out=result2);
+
+	And16(a[0..1]=false, a[2..15]=BookNum[0..13], b=true, out=shift2);
+	Mux16(a=false, b=shift2, sel=BookPri[2], out=result3);
+
+	And16(a[0..2]=false, a[3..15]=BookNum[0..12], b=true, out=shift3);
+	Mux16(a=false, b=shift3, sel=BookPri[3], out=result4);
+
+	And16(a[0..3]=false, a[4..15]=BookNum[0..11], b=true, out=shift4);
+	Mux16(a=false, b=shift4, sel=BookPri[4], out=result5);
+
+	And16(a[0..4]=false, a[5..15]=BookNum[0..10], b=true, out=shift5);
+	Mux16(a=false, b=shift5, sel=BookPri[5], out=result6);
+
+	And16(a[0..5]=false, a[6..15]=BookNum[0..9], b=true, out=shift6);
+	Mux16(a=false, b=shift6, sel=BookPri[6], out=result7);
+
+	And16(a[0..6]=false, a[7..15]=BookNum[0..8], b=true, out=shift7);
+	Mux16(a=false, b=shift7, sel=BookPri[7], out=result8);
+
+	And16(a[0..7]=false, a[8..15]=BookNum[0..7], b=true, out=shift8);
+	Mux16(a=false, b=shift8, sel=BookPri[8], out=result9);
+
+	And16(a[0..8]=false, a[9..15]=BookNum[0..6], b=true, out=shift9);
+	Mux16(a=false, b=shift9, sel=BookPri[9], out=result10);
+
+	And16(a[0..9]=false, a[10..15]=BookNum[0..5], b=true, out=shift10);
+	Mux16(a=false, b=shift10, sel=BookPri[10], out=result11);
+
+	And16(a[0..10]=false, a[11..15]=BookNum[0..4], b=true, out=shift11);
+	Mux16(a=false, b=shift11, sel=BookPri[11], out=result12);
+
+	And16(a[0..11]=false, a[12..15]=BookNum[0..3], b=true, out=shift12);
+	Mux16(a=false, b=shift12, sel=BookPri[12], out=result13);
+
+	And16(a[0..12]=false, a[13..15]=BookNum[0..2], b=true, out=shift13);
+	Mux16(a=false, b=shift13, sel=BookPri[13], out=result14);
+
+	And16(a[0..13]=false, a[14..15]=BookNum[0..1], b=true, out=shift14);
+	Mux16(a=false, b=shift14, sel=BookPri[14], out=result15);
+
+	And16(a[0..14]=false, a[15]=BookNum[0], b=true, out=shift15);
+	Mux16(a=false, b=shift15, sel=BookPri[15], out=result16);
+
+    	Add16(a=result1,b=result2,out=add1);
+    	Add16(a=add1,b=result3,out=add2);
+    	Add16(a=add2,b=result4,out=add3);
+    	Add16(a=add3,b=result5,out=add4);
+    	Add16(a=add4,b=result6,out=add5);
+    	Add16(a=add5,b=result7,out=add6);
+    	Add16(a=add6,b=result8,out=add7);
+    	Add16(a=add7,b=result9,out=add8);
+    	Add16(a=add8,b=result10,out=add9);
+    	Add16(a=add9,b=result11,out=add10);
+    	Add16(a=add10,b=result12,out=add11);
+    	Add16(a=add11,b=result13,out=add12);
+    	Add16(a=add12,b=result14,out=add13);
+    	Add16(a=add13,b=result15,out=add14);
+    	Add16(a=add14,b=result16,out=TotalVal);
+}

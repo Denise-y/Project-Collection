@@ -1,0 +1,56 @@
+// scyyw25 20616309 Yushan Wang
+// Filename: CW.hdl
+/*
+ *  
+ * it is the main chip to finish the cw
+*/
+
+CHIP CW{
+    IN 
+        inBookID[16],inBookNum[16],inBookPri[16],
+        load,
+        store,
+        address[3],
+        load0,load1,load2,load3,load4,load5,load6,load7;
+    OUT
+        outBookID[16],
+        outBookNum[16],
+        outBookPri[16],
+        outTotalVal[16];
+
+    PARTS:
+        // Load Data to Registers
+        Register(in=inBookID,load=load,out=outBookID1);
+        Register(in=inBookNum,load=load,out=outBookNum1);
+        Register(in=inBookPri,load=load,out=outBookPri1);
+
+        // Store Data to RAM
+        RAM8(in=outBookID1,load=store,address=address,out=outBookID);
+        RAM8(in=outBookNum1,load=store,address=address,out=outBookNum);
+        RAM8(in=outBookPri1,load=store,address=address,out=outBookPri);
+
+        // Store inBookNum × inBookPri to RAM
+        Mul(BookNum=inBookNum, BookPri=inBookPri, TotalVal=mulResult);
+        RAM8(in=mulResult, load=store, address=address, out=muloutTotalVal);
+
+        // Sequential Load from RAM
+	Register(in=muloutTotalVal,load=load0,out=reoutTotalVal0);
+	Register(in=muloutTotalVal,load=load1,out=reoutTotalVal1);
+	Register(in=muloutTotalVal,load=load2,out=reoutTotalVal2);
+	Register(in=muloutTotalVal,load=load3,out=reoutTotalVal3);
+	Register(in=muloutTotalVal,load=load4,out=reoutTotalVal4);
+	Register(in=muloutTotalVal,load=load5,out=reoutTotalVal5);
+	Register(in=muloutTotalVal,load=load6,out=reoutTotalVal6);
+	Register(in=muloutTotalVal,load=load7,out=reoutTotalVal7);
+	Mux8Way16(a=reoutTotalVal0,b=reoutTotalVal1,c=reoutTotalVal2,d=reoutTotalVal3,e=reoutTotalVal4,f=reoutTotalVal5,g=reoutTotalVal6,h=reoutTotalVal7,sel=address,out=curTotalVal);
+       
+
+	// Sum of the inBookNum × inBookPri
+	Add16(a=reoutTotalVal0,b=reoutTotalVal1,out=sum1);
+	Add16(a=reoutTotalVal2,b=sum1,out=sum2);
+	Add16(a=reoutTotalVal3,b=sum2,out=sum3);
+	Add16(a=reoutTotalVal4,b=sum3,out=sum4);
+	Add16(a=reoutTotalVal5,b=sum4,out=sum5);
+	Add16(a=reoutTotalVal6,b=sum5,out=sum6);
+	Add16(a=reoutTotalVal7,b=sum6,out=outTotalVal);
+}

@@ -1,0 +1,201 @@
+Item_ID,Item_Name,Price_Per_Item,Bell,Green,Sweet,American,Ice,Cream,White,Wheat,Ranch,Italian,French,Thousand,Blue,Russian,Greek,Bacon,Potatoe,Beef,Iced,Tea,Tortilla,Tomato,Chicken,Clam,Trail,Black,Pinto,Kidney,Taco,Meatloaf,Roast,Swiss,Pancake,Waffle,Maple,Orange,Apple,Peanut,Dog,Cat,Brown,White,Olive,Sour,Soy,Granola,Baby,Whipped,Hot,Bread,Lima,Red,Chia,Canola,Tomato,Alfredo,Baking,Brownie,Baking,Vanilla,Sunflower,Candy,Coffee,English,Chocolate,Ice,Pie,Condensed
+101692,Apples,2.72
+104127,Bananas,2.91
+106444,Pears,3.21
+106498,Oranges,3.98
+106841,Grapes,2.85
+108480,Mangos,4.36
+120032,Kiwis,3.22
+120269,Cherries,3.57
+124301,Plums,3.41
+132959,Lemons,2.53
+134308,Limes,2.94
+138616,Peaches,3.28
+141213,Blueberries,3.76
+141693,Strawberries,3.58
+142710,Pineapples,4.83
+148381,Watermelons,5.85
+148758,Raspberries,4.04
+152312,Apricots,4.07
+152543,Blackberries,4.16
+153814,Cranberries,3.77
+156527,Pomegranate,4.58
+164896,Nectarines,3.53
+170833,Papaya,4.37
+173203,Asparagus,5.92
+178592,Avocado,4.12
+180113,Beets,3.52
+184472,Bell Pepper,3.94
+203104,Broccoli,3.74
+215195,Cabbage,3.41
+215576,Carrots,2.01
+216523,Cauliflower,4.88
+217110,Celery,3.4
+225356,Corn,2.98
+225882,Cucumbers,3.63
+237417,Eggplant,5.16
+238185,Garlic,2.08
+249698,Ginger,4.47
+252936,Kale,5.63
+267487,Spinach,3.71
+292016,Green Beans,4.87
+293201,Tomato,3.71
+293424,Sweet Potato,3.83
+296325,Potato,2.86
+299274,Olives,3.23
+302078,Mushrooms,3.04
+303112,Lettuce,2.65
+308002,Leeks,3.87
+310010,Onions,2.83
+310969,Parsley,2.39
+315749,Radish,3.52
+316681,Shallots,3.77
+329676,Zucchini,3.07
+338499,Milk,3.66
+361752,Eggs,2.4
+369363,American Cheese,1.76
+370504,Butter,2.04
+370839,Ice Cream,4.45
+376376,Cream Cheese,3.99
+393792,White Bread,2.73
+394368,Wheat Bread,3.92
+399374,Chicken,3.58
+401557,Steak,6.31
+406778,Pork,4.14
+408011,Salmon,5.44
+408168,Tuna,3.77
+422007,Lamb,5.16
+423506,Tofu,4.55
+423716,Shrimp,4.14
+429116,Ranch Dressing,2.66
+434686,Italian Dressing,2.44
+437947,French Dressing,3.07
+439949,Thousand Island Dressing,2.1
+440782,Blue Cheese Dressing,2.85
+441267,Russian Dressing,3.7
+443451,Greek Dressing,4.71
+444570,Croutons,2.45
+446081,Bacon Bits,2.52
+464211,Mustard,2.37
+464692,Ketchup,3.92
+470103,Relish,2.1
+475368,Crackers,4.3
+476774,Potatoe Chips,3.28
+489639,Beef Jerky,5.83
+490754,Iced Tea,2.75
+494509,Coffee,2.46
+499586,Tea Bags,3.74
+501772,Tortilla Chips,4.24
+504473,Capers,3.44
+512821,Tomato Soup,2.09
+524513,Chicken Noodle Soup,1.57
+524650,Clam Chowder,3.79
+524995,Trail Mix,5.62
+528857,Black Beans,3.96
+529887,Pinto Beans,2.08
+546129,Kidney Beans,4.7
+547719,Taco Seasoning,2.94
+564329,Meatloaf Mix,3.61
+564768,Salt,4.29
+564961,Pepper,3.16
+569983,Cinnamon,3.8
+572953,Coriander,4.56
+576894,Cuman,3.52
+583831,Dill,4.8
+587936,Nutmeg,3.37
+589681,Molasses,3.52
+597090,Honey,5.71
+597874,Almonds,6.64
+598063,Cashews,7.87
+606733,Coconuts,8.15
+612578,Pecans,4.15
+617379,Pistachios,5.36
+618113,Walnuts,3.43
+624570,Oatmeal,4.51
+625760,Grits,3.63
+626601,Bacon,6.11
+629544,Cereal,4.51
+635214,Ham,5.05
+638681,Roast Beef,7.82
+641053,Turkey,5.46
+641842,Swiss Cheese,3.11
+642007,Pancake Mix,5.9
+648507,Waffle Mix,4.9
+648684,Maple Syrup,5.04
+653120,Muffins,4.09
+660390,Scones,3.81
+660961,Orange Juice,3.25
+664486,Apple Juice,4.11
+664666,Peanut Butter,3.8
+664921,Jelly,4.09
+665417,Pudding,3.27
+665531,Yogurt,3.68
+665841,Sausages,5.45
+670394,Salami,6.22
+678840,Pasta,4.05
+681677,Dog Food,8.54
+683553,Cat Food,7.35
+684358,Brown Rice,5.05
+689496,White Rice,4.48
+698869,Soda,3.72
+698874,Water,4.81
+715405,Vinegar,3.12
+718002,Olive Oil,4.35
+725754,Sour Cream,3.28
+739065,Mayonnaise,3.12
+760331,Pickles,4.04
+760651,Salsa,2.51
+765453,Soy Sauce,4.12
+765710,Granola Bars,5.89
+778389,Popcorn,3.71
+785888,Baby Food,5.97
+788649,Donuts,4.45
+790950,Hummus,3.07
+792879,Gum,2.04
+795170,Whipped Cream,2.5
+798039,Pie,8.47
+799673,Cake,9.14
+800356,Hot Dogs,5.95
+800494,Pretzels,4.7
+806716,Chocolate,2.18
+810603,Bread Crumbs,4.41
+821433,Sugar,3.28
+824662,Squash,5.92
+825804,Edamame,6.18
+826217,Grapefruit,4.48
+830859,Lima Beans,5.16
+834405,Applesauce,4.89
+842218,Prunes,3.84
+842649,Buckwheat,5.11
+846255,Red Beans,4.01
+859376,Quinoa,5.32
+860649,Polenta,4.54
+874200,Seltzer,3.61
+874995,Popsicles,4.57
+875205,Artichokes,3.81
+876806,Chia Seeds,7.16
+880137,Canola Oil,5.12
+886602,Sardines,4.58
+899758,Anchovies,3.64
+900703,Tomato Sauce,5.99
+901477,Alfredo Sauce,4.43
+923800,Pesto,6.98
+933312,Chickpeas,6.91
+938313,Baking Powder,4.5
+939972,Brownie Mix,3.2
+941271,Baking Soda,4
+945420,Vanilla Extract,4.83
+948647,Basil,5.23
+949771,Sunflower Seeds,3.22
+952653,Candy Bar,1.31
+968040,Tortillas,3.52
+969692,Coffee Cake,5.35
+970033,English Muffins,4.14
+977062,Biscuits,4.09
+978139,Chocolate Syrup,3.14
+982308,Sprinkles,2.99
+982446,Ice Cream Cones,3.16
+985451,Frosting,2.55
+993975,Pie Crust,4.72
+997284,Condensed Milk,3.26
+997517,Cornbread,5.48
