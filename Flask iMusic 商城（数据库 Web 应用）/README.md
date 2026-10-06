@@ -62,15 +62,15 @@
 | `Track` | 曲目信息（名称、所属专辑、单价、时长） |
 
 ## 项目结构
-iMusic/
-├── iMusic.py              # 主应用文件（所有后端逻辑）
-├── templates/
-│   ├── statistics.html    # 统计报表页面（已提供）
-│   ├── invoice.html       # 发票生成页面（已提供）
-│   └── ...                # 其他模板文件
-├── data/
-│   └── original_customers.tsv   # 示例 TSV 数据文件
-└── database/
+iMusic/\
+├── iMusic.py              # 主应用文件（所有后端逻辑）\
+├── templates/ \
+│   ├── statistics.html    # 统计报表页面（已提供）\
+│   ├── invoice.html       # 发票生成页面（已提供）\
+│   └── ...                # 其他模板文件\
+├── data/\
+│   └── original_customers.tsv   # 示例 TSV 数据文件\
+└── database/\
 └── iMusic.db          # SQLite 数据库
 
 ## 关键实现细节
